@@ -1,4 +1,4 @@
-angular.module('starter', ['ionic', 'starter.controllers', 'uiGmapgoogle-maps', 'nemLogging', 'ngCordova'])
+angular.module('starter', ['ionic', 'uiGmapgoogle-maps', 'nemLogging', 'ngCordova'])
     .run(function ($ionicPlatform) {
         $ionicPlatform.ready(function () {
             if (window.cordova && window.cordova.plugins && window.cordova.plugins.Keyboard) {
