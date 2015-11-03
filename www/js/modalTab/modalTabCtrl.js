@@ -7,7 +7,6 @@ angular.module('starter').controller('ModalTabCtrl', function ($ionicModal, $sco
     });
 
     $scope.openModal = function () {
-        console.log('modal!!!!');
         $scope.modal.show();
     };
 
