@@ -1,4 +1,6 @@
-angular.module('starter').controller('ModalTabCtrl', function ($ionicModal, $scope) {
+angular.module('starter').controller('ModalTabCtrl', function ($ionicModal, $scope, $timeout) {
+    $scope.modalControl = {};
+
     $ionicModal.fromTemplateUrl('templates/my-modal.html', {
         scope: $scope,
         animation: 'slide-in-up'
@@ -8,6 +10,10 @@ angular.module('starter').controller('ModalTabCtrl', function ($ionicModal, $sco
 
     $scope.openModal = function () {
         $scope.modal.show();
+        $scope.modalControl.refresh({
+            latitude: 37.778414,
+            longitude: -122.389212
+        });
     };
 
     $scope.closeModal = function () {
